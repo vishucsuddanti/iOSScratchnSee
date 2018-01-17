@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScratchnSee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="won.png" translatesAutoresizingMaskIntoConstraints="NO" id="CAW-YM-KvB">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scratch.png" translatesAutoresizingMaskIntoConstraints="NO" id="T1e-nB-VpJ" customClass="ImageMaskView" customModule="ScratchnSee" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T1e-nB-VpJ" secondAttribute="bottom" id="9BU-W8-qVv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CAW-YM-KvB" secondAttribute="bottom" id="cl3-73-vk0"/>
+                            <constraint firstItem="T1e-nB-VpJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dQc-OW-1Qj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CAW-YM-KvB" secondAttribute="trailing" id="eRA-x7-IEl"/>
+                            <constraint firstItem="T1e-nB-VpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fq6-oX-i9u"/>
+                            <constraint firstItem="CAW-YM-KvB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="n0U-GO-s6M"/>
+                            <constraint firstItem="CAW-YM-KvB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wAO-EB-SDq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T1e-nB-VpJ" secondAttribute="trailing" id="wl6-UP-UqJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scratchImage" destination="T1e-nB-VpJ" id="nW6-cw-krg"/>
+                        <outlet property="wonImage" destination="CAW-YM-KvB" id="MqZ-9Y-3pp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="scratch.png" width="640" height="1136"/>
+        <image name="won.png" width="640" height="1136"/>
+    </resources>
+</document>
